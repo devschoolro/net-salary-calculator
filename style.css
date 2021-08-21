@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  background: #fff;
+  padding: 16px;
+  border-radius: 3px;
+  max-width: 640px;
+}
+
+.container:first-child {
+  margin-bottom: 20px;
+}
+
+.form-input label {
+  font-weight: 700;
+}
+
+.form-input input {
+  border: solid 1px #ccc;
+  border-radius: 3px;
+  padding: 12px;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.form-input {
+  margin-bottom: 6px;
+}
+
+button {
+  color: #fff;
+  background: #1e3c72;
+  border: none;
+  border-radius: 3px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.item-value {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.diagram {
+  display: flex;
+}
+
+.bar {
+  color: #fff;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-green {
+  background-color: rgb(16, 138, 16);
+}
+.bar-red {
+  background-color: rgb(212, 35, 35);
+}
+
+.error-message {
+  color: #fff;
+  background: rgb(189, 62, 62);
+  padding: 12px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+  display: none;
+}
+
+.salary-details {
+  display: none;
+}

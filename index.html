@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator salariu net pentru programatori</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error-message"></div>
+      <div class="form-input">
+        <label for="salary">Suma incasata (RON)</label>
+        <input id="salary" type="number" min="1" placeholder="Salariu brut" />
+      </div>
+      <button id="calculateBtn">Calculeaza</button>
+    </div>
+
+    <div class="container salary-details">
+      <div class="item">
+        <span class="item-label">Salariu brut</span>
+        <span id="grossSalary" class="item-value"></span>
+      </div>
+      <div class="item">
+        <span class="item-label">Asigurari Sociale (CAS) - 25%</span>
+        <span id="cas" class="item-value"></span>
+      </div>
+      <div class="item">
+        <span class="item-label">
+          Asigurari Sociale de Sanatate (CASS) - 10%
+        </span>
+        <span id="cass" class="item-value"></span>
+      </div>
+      <div class="item">
+        <span class="item-label">Salariu net</span>
+        <span id="netSalary" class="item-value"></span>
+      </div>
+
+      <div class="diagram">
+        <div class="bar bar-green"></div>
+        <div class="bar bar-red"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
